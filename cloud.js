@@ -1,6 +1,6 @@
 /* Supabase connection. Only the public publishable key belongs in config.js. */
 const cloudClient = TejunSupabase.createClient(TEJUN_CONFIG.url, TEJUN_CONFIG.publishableKey, {
-  auth: { storageKey: 'tejun-note-auth-v1', persistSession: true, autoRefreshToken: true, detectSessionInUrl: true }
+  auth: { storageKey: 'tejun-note-auth-v1', persistSession: true, autoRefreshToken: true, detectSessionInUrl: false }
 });
 const cloud = {
   user: null,
