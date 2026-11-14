@@ -21,7 +21,8 @@ jobs:
       - name: Prepare static site
         run: |
           mkdir _site
-          cp index.html app.js polish.css _site/
+          cp index.html app.js polish.css cloud.js config.js _site/
+          cp -R vendor _site/
           touch _site/.nojekyll
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3

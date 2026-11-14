@@ -1,0 +1,1 @@
+{"name":"tejun-note","version":"1.0.0","private":true,"scripts":{"build:sdk":"esbuild sdk-entry.js --bundle --minify --format=iife --global-name=TejunSupabase --outfile=vendor/supabase.js"},"dependencies":{"@supabase/supabase-js":"2.119.0"},"devDependencies":{"esbuild":"0.28.2"}}
